@@ -1,1 +1,30 @@
+<script>
+    let a = true;
+    while (confirm("Викликати prompt()?")) {
+             let x = parseFloat(prompt("Введіть перше число X:"));
+             let y = parseInt(prompt("Введіть число Y (діапазон 0-4):"));
 
+            switch (parseInt(y)) {
+                case 0:
+                    console.log(x + " в степені " + y + " = " + 1);
+                    break;
+                case 1:
+                    console.log(x + " в степені " + y + " = " + x);
+                    break;
+                case 2:
+                    console.log(x + " в степені " + y + " = " + (x * x));
+                    break;
+                case 3:
+                    console.log(x + " в степені " + y + " = " + (x * x * x));
+                    break;
+                case 4:
+                    console.log(x + " в степені " + y + " = " + (x * x * x * x));
+                    break;
+                default:
+                    console.log("Неправильне значення Y!");
+                    break;
+            }
+        }
+
+        console.log("Робота програми завершена");
+</script>
